@@ -14,7 +14,7 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 
 
-//this is from attempted use of passport, will try to use for firebaseUI
+//this ispassport, will try to use for firebase
 // User Login Page Route
 router.get("/login", (req, res) => {
 	res.render("users/login");

@@ -1,5 +1,114 @@
 
+// const firebase = require("/off");
+const firebaseConfig = {
+    apiKey: "AIzaSyBxAaYmjGtvtik079-sCjpRIwRNyDn6nHc",
+    authDomain: "covid-id-6cc8a.firebaseapp.com",
+    databaseURL: "https://covid-id-6cc8a.firebaseio.com",
+    projectId: "covid-id-6cc8a",
+    storageBucket: "covid-id-6cc8a.appspot.com",
+    messagingSenderId: "647213455277",
+    appId: "1:647213455277:web:2ddc94066695fd36503324",
+    measurementId: "G-160PVSNFL8"
+  };
+
+// firebase.initializeApp(firebaseConfig);
+
+//Get elements
+
+const txtEmail = document.getElementById('txtEmail');
+const txtPassword = document.getElementById('txtPassword');
+const btnLogin = document.getElementById('btnLogin');
+const btnSignUp = document.getElementById('btnSignUp');
+const btnLogout = document.getElementById('btnLogout');
+
+
+//add login event
+btnLogin.addEventListener('click', e => {
+    // Get email and pass
+    console.log(txtEmail.value, txtPassword.value);
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    // const auth = firebase.auth();
+    // Sign in
+    // const promise = auth.signInWithEmailAndPassword(email, pass);
+    // promise
+        // .catch(e => console.log(e.message));
+
+});
+
+// btnLogout.addEventListener('click', e =>{
+//     firebase.auth().signOut();
+// });
+
+// //add a realtime listener
+// firebase.auth().onAuthStateChanged(firebaseUser => {
+//     if(firebaseUser) {
+//         console.log(firebaseUser);
+//         btnLogout.classList.remove('hide');
+//     }else{
+//         console.log('not logged in');
+//         btnLogout.classList.add('hide');
+//     }
+
+// });
+
+// // add signup event
+// btnSignUp.addEventListener('click', e => {
+//     //gets new email and password check if real email
+//     const email = txtEmail.value;
+//     const pass = txtPassword.value;
+//     const auth = firebase.auth();
+//     // Sign in
+//     const promise = auth.createUserWithEmailAndPassword(email, pass);
+//     promise.catch(e => console.log(e.message));
+//     promise
+//         .catch(e => console.log(e.message));
+
+
+// });
+// //add a realtime listener
+// firebase.auth().onAuthStateChanged(firebaseUser => {
+//     if(firebaseUser){
+//         console.log(firebaseUser);
+//     } else {
+//         console.log("not logged in");
+//     }
+
+// })
+
+// //Handle Account Status
+// firebase.auth().onAuthStateChanged(user => {
+//     if(user) {
+//       window.location = 'views/user.handlebars'; //After successful login, user will be redirected to user.html
+//     }});
+
+
+
+
+
+
+
+// var document = require("index.html")
+// document.getElementById("button").onclick;
+
+
+
+
+
+
+
+
+
+
+
 // var ui = new firebaseui.auth.AuthUI(firebase.auth());
+// const auth = firebase.auth();
+// auth.signInWithEmailAndPassword(email, pass);
+// //returns a promise where user can be resolved
+// auth.createUserWithEmailAndPassword(email, pass);
+// //will create user and log them in)
+// //async resolves users data, but does only once.
+// auth.onAuthStateChanged(firebaseUser => { });
 
 
 // //intializing firebase ui 
@@ -165,4 +274,3 @@
 //         // Common errors could be invalid email and invalid or expired OTPs.
 //       });
 //   }
-  

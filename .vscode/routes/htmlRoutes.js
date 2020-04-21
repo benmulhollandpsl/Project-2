@@ -2,6 +2,8 @@ var db = require("../models");
 const axios = require('axios');
 var path = require("path");
 
+
+
 // function for api from new york times
 async function getNyTimesTopStories() {
   try {
@@ -33,12 +35,13 @@ module.exports = function(app) {
 
 
   app.get('/users', function(req, res) {
-      res.sendFile(path.join(__dirname , "../public/assets/user.html"));
-});
+      res.sendFile(path.join(__dirname + '/../public/html/users.html'));//is this assets or user.html
+    // });
 
-app.get('/info', function(req, res) {
-  res.sendFile(path.join(__dirname , "../public/assets/info.html"));
-});
+    // app.get('/info', function(req, res) {
+    //   res.sendFile(path.join(__dirname , "../public/assets/info.html"));
+    // });
+    });
 
 
     
